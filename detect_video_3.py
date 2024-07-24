@@ -193,7 +193,8 @@ if __name__ == '__main__':
                 # 填充并居中图像
                 frame = cv2.copyMakeBorder(frame, top, bottom, left, right, cv2.BORDER_CONSTANT, value=[0, 0, 0])
 
-            # cv2.imshow('square_image', square_image)
+                cv2.imshow('square_image', frame)
+                continue
             # Predict objects in the frame
             result = model.predict(frame, imgsz=1280)[0]
 

@@ -212,15 +212,6 @@ if __name__ == '__main__':
             if rand==1:
                 continue
             result = model.predict(frame, imgsz=1280)[0]
-            # frame = cv2.resize(frame, (1280, 1280))
-            # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            # frame = frame.astype(np.float32)
-            # frame = frame / 255.0  # 归一化到 [0, 1]
-            # frame = np.transpose(frame, (2, 0, 1))  # 变换到 (C, H, W) 格式
-            # frame = np.expand_dims(frame, axis=0)  # 添加批次维度
-            # result = sess.run([output_name],{inpput_name:frame})
-            # print(result)
-            # continue
 
             ball_box = None
             basket_box = None
