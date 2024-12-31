@@ -14,7 +14,7 @@ model = YOLO(r'/Users/shanquan/code/opencv_code/measure/v2/upload_files/runs/tra
 
 # Initialize video capture
 num_video = 2
-video_path = rf'final_video/{num_video}.MOV'
+video_path = rf'/Users/shanquan/Movies/basketball/b1.mp4'
 resize_flag = False
 
 cap = cv2.VideoCapture(video_path)
